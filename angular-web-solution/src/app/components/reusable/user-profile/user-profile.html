@@ -1,19 +1,20 @@
-<div class="bg-orange-300">
-    <div class="bg-orange-400">
-        <p>User Profile component</p>
-        <p>User id = {{ id }} >>>>>> user name = {{ getUserName() }}</p>
-
-        <input
-            type="text"
-            class="px-8 py-2 rounded-lg bg-purple-400"
-            [(ngModel)]="name"
-        ><span>two way binding</span>
-        <br/>
-        <input
-            type="text"
-            class="mt-2 px-8 py-2 rounded-lg bg-purple-400"
-            (input)="onUpdateValue($event)"
-        ><span>one way binding</span>
-        <div class="mt-5">VALUE: {{ name }}</div>
+<div class="bg-green-200 rounded-xl">
+    <div class="bg-green-200 rounded-xl">
+        <p class="rounded-t-xl text-center py-3" appRedText>User Profile component</p>
+        <div class="p-5">
+            <p>User id = {{ id }} >>>>>> user name = {{ getUserName() }}</p>
+            <input
+                type="text"
+                class="px-8 py-2 rounded-lg bg-purple-400"
+                [(ngModel)]="name"
+            ><span>two way binding</span>
+            <br/>
+            <input
+                type="text"
+                class="mt-2 px-8 py-2 rounded-lg bg-purple-400"
+                (input)="onUpdateValue($event)"
+            ><span>one way binding</span>
+            <div class="mt-5">VALUE: {{ name }}</div>
+        </div>
     </div>
 </div>

@@ -1,8 +1,9 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RedTextDirective } from "../../../directives/red-text.directive";
 
 @Component({
-    imports: [FormsModule],
+    imports: [FormsModule, RedTextDirective],
     selector: 'app-user-profile',
     templateUrl: './user-profile.html',
 
