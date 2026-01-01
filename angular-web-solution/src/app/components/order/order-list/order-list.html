@@ -1,0 +1,29 @@
+<div class="bg-green-200 rounded-xl border border-gray-400">
+    <div class="bg-green-200 rounded-xl">
+        <p class="rounded-t-xl text-center py-3" appRedText>Order list component</p>
+        <div class="p-5">
+            <div class="flex flex-row gap-2 mb-3">
+                <!-- <span>adding orders</span> -->
+                <input
+                    type="text"
+                    class="border border-gray-800 rounded-md"
+                    [(ngModel)]="newOrder"
+                />
+                <button
+                    class="px-8 py-2 rounded-lg cursor-pointer font-semibold text-white bg-linear-65 from-blue-500 to-blue-900 hover:scale-105 transition-all duration-300"
+                    (click)="addOrder()"
+                >
+                    Add Order
+                </button>
+            </div>
+            <!-- <p>1</p> -->
+            <div class="flex flex-col gap-2">
+                @for (item of orders; let i = $index; track item) {
+                    <app-order [order]="item"></app-order>
+                } @empty {
+                    <li>No items found.</li>
+                }
+            </div>
+        </div>
+    </div>
+</div>

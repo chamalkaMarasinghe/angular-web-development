@@ -1,8 +1,18 @@
-<div class="bg-green-200 rounded-xl">
+<div class="bg-green-200 rounded-xl border border-gray-400">
     <div class="bg-green-200 rounded-xl">
         <p class="rounded-t-xl text-center py-3" appRedText>Service portal component</p>
         <div class="p-5">
-            <p>Content</p>
+            <div>
+                <button 
+                    class="px-8 py-2 rounded-lg cursor-pointer font-semibold text-white bg-linear-65 from-blue-500 to-blue-900 hover:scale-105 transition-all duration-300"
+                    (click)="invokeService()"
+                >
+                    Call the service
+                </button>
+                <div class="mt-3">
+                    <app-order-list></app-order-list>
+                </div>
+            </div>
         </div>
     </div>
 </div>

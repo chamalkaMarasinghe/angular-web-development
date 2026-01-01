@@ -7,7 +7,7 @@ import { ServicePortal } from "./components/reusable/service-portal/service-port
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserProfile, UserList, ServicePortal],
+  imports: [RouterOutlet, UserProfile, ServicePortal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
