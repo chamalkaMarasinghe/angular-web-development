@@ -1,8 +1,8 @@
 import { Component, DoCheck, OnInit } from '@angular/core';
-import { RedTextDirective } from '../../../directives/red-text.directive';
-import { Order } from "../order/order";
-import { OrderService } from '../../../services/order.service';
 import { FormsModule } from '@angular/forms';
+import { RedTextDirective } from '../../../../shared/directives/red-text.directive';
+import { OrderService } from '../../services/order.service';
+import { Order } from '../order/order';
 
 @Component({
   selector: 'app-order-list',

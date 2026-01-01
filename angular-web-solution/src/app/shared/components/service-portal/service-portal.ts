@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { RedTextDirective } from "../../../directives/red-text.directive";
-import { ReportService } from '../../../services/report.service';
-import { OrderList } from "../../order/order-list/order-list";
+import { OrderList } from '../../../features/orders/components/order-list/order-list';
+import { RedTextDirective } from '../../directives/red-text.directive';
+import { ReportService } from '../../../features/orders/services/report.service';
 
 @Component({
   selector: 'app-service-portal',

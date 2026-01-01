@@ -1,6 +1,6 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RedTextDirective } from "../../../directives/red-text.directive";
+import { RedTextDirective } from '../../../../shared/directives/red-text.directive';
 
 @Component({
     imports: [FormsModule, RedTextDirective],

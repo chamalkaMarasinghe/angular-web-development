@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { RedTextDirective } from '../../../directives/red-text.directive';
-import { OrderService } from '../../../services/order.service';
+import { RedTextDirective } from '../../../../shared/directives/red-text.directive';
+import { OrderService } from '../../services/order.service';
 
 @Component({
   selector: 'app-order',
