@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
-
+import { map } from "rxjs/operators"
 @Component({
   selector: 'app-order-categories-page',
   imports: [],
@@ -23,7 +23,7 @@ export class OrderCategoriesPage implements OnInit, OnDestroy{
       }, 1000);
     })
 
-    this.mySubscription = customObservable.subscribe(data => {
+    this.mySubscription = customObservable.pipe(map(data => { return `amazing count ${data}`})).subscribe(data => {
       console.log(data);
     })
   }
