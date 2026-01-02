@@ -15,21 +15,22 @@ export class OrderCategoriesPage implements OnInit, OnDestroy{
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    let customObservable = new Observable<number>(observer => {
-      let count = 0;
-      setInterval(() => {
-        count++;
-        observer.next(count)
-      }, 1000);
-    })
 
-    this.mySubscription = customObservable.pipe(map(data => { return `amazing count ${data}`})).subscribe(data => {
-      console.log(data);
-    })
+    // let customObservable = new Observable<number>(observer => {
+    //   let count = 0;
+    //   setInterval(() => {
+    //     count++;
+    //     observer.next(count)
+    //   }, 1000);
+    // })
+
+    // this.mySubscription = customObservable.pipe(map(data => { return `amazing count ${data}`})).subscribe(data => {
+    //   console.log(data);
+    // })
   }
 
   ngOnDestroy(): void {
-    this.mySubscription?.unsubscribe();
+    // this.mySubscription?.unsubscribe();
   }
 
   gotoOrders() {
