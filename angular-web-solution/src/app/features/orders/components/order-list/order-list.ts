@@ -23,9 +23,7 @@ export class OrderList implements OnInit, DoCheck {
   }
 
   ngDoCheck(): void {
-    this.orders = this.orderService.orders;
-    console.log(this.orders);
-        
+    this.orders = this.orderService.orders;        
   }
 
   addOrder() {
