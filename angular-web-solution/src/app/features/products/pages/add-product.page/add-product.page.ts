@@ -5,7 +5,7 @@ import { TruncatePipe } from '../../../../shared/pipes/truncate.pipe';
 
 @Component({
   selector: 'app-add-product.page',
-  imports: [FormsModule, TruncatePipe],
+  imports: [FormsModule],
   templateUrl: './add-product.page.html',
   styleUrl: './add-product.page.css',
 })

@@ -4,6 +4,7 @@ import { OrderListPage } from './features/orders/pages/order-list.page/order-lis
 import { OrderCategoriesPage } from './features/orders/pages/order-categories.page/order-categories.page';
 import { AuthGaurd } from './core/gaurds/auth.guard';
 import { AddProductPage } from './features/products/pages/add-product.page/add-product.page';
+import { ProductListPage } from './features/products/pages/product-list.page/product-list.page';
 
 export const routes: Routes = [
     {
@@ -22,5 +23,9 @@ export const routes: Routes = [
     {
         path: 'add-product',
         component: AddProductPage
+    },
+    {
+        path: 'products',
+        component: ProductListPage
     }
 ];
