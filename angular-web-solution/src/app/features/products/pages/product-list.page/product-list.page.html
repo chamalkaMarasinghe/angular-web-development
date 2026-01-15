@@ -4,7 +4,26 @@
         <div class="p-5">
             <div>
                 <div class="">
-                    <P>Product List Page</P>
+                    <p class="text-xl font-semibold">Product List Page</p>
+                    <p>Simulating http requests with http client</p>
+                </div>
+                <div class="flex flex-col gap-3 mt-5">
+                    <div class="w-50">
+                        <button 
+                            class="flex w-full justify-center items-center mt-2 px-8 py-2 rounded-lg cursor-pointer font-semibold text-white bg-linear-65 from-blue-500 to-blue-900 hover:scale-105 transition-all duration-300"
+                            (click)="createProdcut()"
+                        >
+                            Create Prodcut
+                        </button>
+                    </div>
+                    <div class="w-50">
+                        <button 
+                            class="flex w-full justify-center items-center mt-2 px-8 py-2 rounded-lg cursor-pointer font-semibold text-white bg-linear-65 from-blue-500 to-blue-900 hover:scale-105 transition-all duration-300"
+                            (click)="getProducts()"
+                        >
+                            Get All Prodcuts
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
