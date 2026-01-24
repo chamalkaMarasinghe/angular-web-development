@@ -10,6 +10,5 @@ import { RedTextDirective } from '../../directives/red-text.directive';
 })
 export class Counter {
 
-  @Input() count: number = 0;
-
+  @Input() count: any = 0;
 }
